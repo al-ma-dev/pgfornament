@@ -1,0 +1,18 @@
+% pgfornament-lib-am.code.tex (utf8 encoding)
+% Copyright 2012-2026  Alain Matthes
+% SPDX-License-Identifier: LPPL-1.3c
+% Maintainer: Alain Matthes
+% Original idea of  F Fradin and H Voss
+\typeout{2026/10/17 1.4  pgfornament-lib-am.code.tex}%
+\expandafter\edef\csname pgfornament@restoreat\endcsname{\catcode`\noexpand\@=\the\catcode`\@\relax}%
+\catcode`\@=11\relax
+% dimensions des motifs (en bp)
+\def\@pgfornamentDim#1{%
+\ifcase#1\relax%
+\or\def\@pgfornamentX{400}\def\@pgfornamentY{22}%  1  v1.4 (was 136x107)
+\or\def\@pgfornamentX{111}\def\@pgfornamentY{113}% 2  v1.4 (was 133x48)
+\fi%
+}%
+% v1.4 : the motifs are called by \pgf@@ornament defined in pgfornament.sty
+\pgfornament@restoreat
+\endinput

@@ -1,0 +1,33 @@
+# macOS / editor
+.DS_Store
+.nova/
+.pkg.conf
+
+# local work folders
+_backup*/
+_tests/
+build/
+doc/build/
+tools/build/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.toc
+*.lof
+*.out
+*.idx
+*.ind
+*.ilg
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# CTAN archives
+*.zip
+*.tgz
+
+# Python
+__pycache__/

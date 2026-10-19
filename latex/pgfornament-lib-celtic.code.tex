@@ -1,0 +1,30 @@
+% pgfornament-lib-celtic.code.tex (utf8 encoding)
+% Copyright 2026  Alain Matthes
+% SPDX-License-Identifier: LPPL-1.3c
+% Maintainer: Alain Matthes
+\typeout{2026/10/17 1.4  pgfornament-lib-celtic.code.tex}%
+\expandafter\edef\csname pgfornament@restoreat\endcsname{\catcode`\noexpand\@=\the\catcode`\@\relax}%
+\catcode`\@=11\relax
+% dimensions des motifs (en bp)
+\def\@pgfornamentDim#1{%
+\ifcase#1\relax%
+\or\def\@pgfornamentX{84.5}\def\@pgfornamentY{84.5}% 1
+\or\def\@pgfornamentX{97.5}\def\@pgfornamentY{97.5}% 2
+\or\def\@pgfornamentX{99.1}\def\@pgfornamentY{99.1}% 3
+\or\def\@pgfornamentX{86.8}\def\@pgfornamentY{86.8}% 4
+\or\def\@pgfornamentX{97.2}\def\@pgfornamentY{97.2}% 5
+\or\def\@pgfornamentX{102.5}\def\@pgfornamentY{102.5}% 6
+\or\def\@pgfornamentX{124.3}\def\@pgfornamentY{124.3}% 7
+\or\def\@pgfornamentX{123.2}\def\@pgfornamentY{123.2}% 8
+\or\def\@pgfornamentX{118.8}\def\@pgfornamentY{118.8}% 9
+\or\def\@pgfornamentX{112.1}\def\@pgfornamentY{112.1}% 10
+\or\def\@pgfornamentX{124.8}\def\@pgfornamentY{124.8}% 11
+\or\def\@pgfornamentX{123.7}\def\@pgfornamentY{123.7}% 12
+\or\def\@pgfornamentX{97.9}\def\@pgfornamentY{97.9}% 13
+\or\def\@pgfornamentX{91.6}\def\@pgfornamentY{92.2}% 14
+\or\def\@pgfornamentX{91.2}\def\@pgfornamentY{91.2}% 15
+\or\def\@pgfornamentX{89.6}\def\@pgfornamentY{89.6}% 16
+\fi%
+}%
+\pgfornament@restoreat
+\endinput
